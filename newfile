@@ -21,7 +21,3 @@ name: Network Getting Started First Playbook Extended
     - name: Get changed config for VyOS devices
       vyos.vyos.vyos_facts:
         gather_subset: all
-
-    - name: Display the changed config
-      debug:
-        msg: "The new hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
